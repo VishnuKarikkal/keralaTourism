@@ -1,0 +1,119 @@
+.alignAbout
+{
+    margin-bottom: -100px;
+}
+
+.container
+{
+    margin-top: 10px;
+}
+
+.imgDestinationMargin
+{
+    margin: 20px 40px 0 50px;
+}
+
+.textDestination
+{
+    margin-top: 80px;
+}
+
+footer
+{
+    margin-top: 25px;
+    padding: 10px 5px 5px 5px;
+}
+
+.containerExplore
+{
+    border:2px solid white ;
+    margin: 15px 15px 5px 5px;
+    position: relative;
+   
+}
+
+.containerExplore .btnExplore
+{
+  position: absolute;
+  top: 60%;
+  right: 20%;
+  color: rgb(248, 12, 12);
+  font-size: 20px;
+  padding: 8px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  
+}
+                /* icons container basic formatting */
+.socialIcons
+{
+    top: 10%;
+    margin-left: 280px;
+}
+              /* icons start */
+ .fa {       
+    padding: 10px;
+    font-size: 15px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 40%;
+  }
+              /* icons hover  */
+  .fa:hover
+{
+    opacity: 0.7;
+}
+              /* facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+              /* twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+              /* google */
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+            /* youtube */
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+            /* instagram */
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+          /* skype */
+  .fa-skype {
+    background: #00aff0;
+    color: white;
+  }
+        /* android */
+  .fa-android {
+    background: #a4c639;
+    color: white;
+  }
+
+                /* signin form alignments */
+
+  .logInMargin
+  {
+    margin: 5px 10px 5px 160px;
+  }
+
+  .logInBtns
+  {
+    margin: 10px 0 15px 155px;
+  }
+  .signUpRows
+  {
+    margin: 10px 0 10px 0;
+  }

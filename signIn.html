@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="author" name="VISHNU KS">
+    <meta name="description" content="Kerala Tourism Web-Page">
+    
+    <title>Kerala Tourism</title>
+    <link rel="icon" href="/img/icon.jpg" type="image">
+  
+                                         <!-- Bootstrap Scripts -->
+     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+                                         <!-- Bootstrap css -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+                     
+                                         <!-- my styles and formatting -->
+     <link rel="stylesheet" href="./css/style.css">
+     <link rel="stylesheet" href="./css/formatting.css">
+     <link rel="stylesheet" href="./css/validationStyles.css">
+                                          <!--google fonts 'Cairo' , 'Indie Flower', 'Titan One', 'Baloo +2', 'Gayathri' -->
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Berkshire+Swash&family=Cairo:wght@400;900&family=Gayathri&family=Indie+Flower&family=Titan+One&display=swap" rel="stylesheet">
+                                            <!--social media icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                                
+                                  
+
+</head>
+<body>
+ 
+                        <!-- Header section -->
+                        <header class="bg-primary" style="border: 2px solid rgb(221, 240, 56);">   
+                          <!-- header navbar -->
+    <nav class="navbar navbar-expand-lg" style="padding: 5px 10px 5px 10px;">
+          
+                  <a class="navbar-brand" href="/index.html" style="margin-right: 10px;">
+                  <img src="img/icon.jpg" width="80" height="60" style="border-radius: 60%;" class="d-inline-block align-middle" alt="">
+                   <span class="text-light"><h2 style="display: inline;font-family: 'Berkshire Swash', cursive;">Kerala Tourism</h2> </span>
+                  </a>
+                             
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                                                        <!-- home link -->
+                <li class="nav-item">
+                 <a class="nav-link text-light" style="margin-left: 5px;font-size: 16px;font-family: 'Titan One', cursive;" href="/index.html">Home</a>
+                </li>
+                                                        <!-- discover link -->
+                <li class="nav-item">
+                 <a class="nav-link text-light" style="margin-left: 5px;font-size: 16px;font-family: 'Titan One', cursive;" href="/districts.html">Discover</a>
+                </li>
+                                
+                </ul>
+                              
+                  <ul class="nav navbar-nav navbar-right">
+                    <li style="margin-right: 20px;font-size: 16px;">
+                      <a href="/signIn.html" class="carouselFont" style="color: black;">
+                                                        <!-- signIn link with a suiting image  -->
+                      <span style="margin-right: 5px;">
+                        <img src="/img/signin.jpg" width="30" height="30" style="border-radius: 50%;" alt="">
+                      </span>
+                      Sign-In</a></li>
+                    <li style="margin-right: 10px;font-size: 16px;">
+                      <a href="signUp.html" class="text-light carouselFont">
+                                                        <!-- signUp link with a suiting image  -->
+                      <span style="margin-right: 5px;">
+                        <img src="/img/signup.jpg" width="30" height="30" style="border-radius: 50%;" alt="">
+                      </span>Sign-Up</a></li>
+                  </ul>
+                    
+                    
+              </div>
+      </nav>
+                                  <!-- header end -->
+  </header>
+
+                    <!--login starts -->
+                    
+<div class="container">
+
+  <div class="imageContainer">
+
+    <img src="./img/logInAvatar.jpg" alt="Avatar" class="logInAvatar">
+
+  </div>
+                    <!-- form starts -->
+             
+                    <form action="#" onsubmit="return (validateLogIn())">
+                      <!-- Sign-In Label -->
+       <h3 style="margin: 10px 5px 15px 300px;color: violet;font-family: 'Baloo 2', cursive;">Sign-In</h3>
+                  
+      <div class="form-group col-md-6 logInMargin">
+                        <!-- username label & input -->
+         <label for="usernameLogIn" class="text-primary">Enter Username</label>
+         <input type="text" class="form-control" id="usernameLogIn" aria-describedby="usernameHelp">
+         <small id="usernameHelp" class="form-text text-muted">Enter Your Account Username.</small>
+      
+      </div>
+  
+      <div class="form-group col-md-6 logInMargin">
+                        <!-- password label & Input -->
+        <label for="passwordLogIn" class="text-primary">Password</label>
+        <input type="password" class="form-control" id="passwordLogIn">
+        <small id="passwordHelp" class="form-text"></small>
+        <a href="" class="text-warning" style="font-size: 12px; font-weight: bold;">Forgot Password...?!</a>
+      
+      </div>
+  
+                      <!-- submit & cancel buttons -->
+      <div class="logInBtns">
+  
+      <button id="submit" class="btn btn-primary btnSubmit col-md-4">Log-In</button>
+      <button class="btn btn-warning btnCancel col-md-4" onclick="location.href='index.html'">Cancel</button>
+  
+      </div>
+  
+  </form>
+                          <!-- form end -->
+</div>
+
+
+
+                     <!-- footer -->
+  <footer class="bg-light">
+
+  <p style="text-align: center; color:firebrick;font-size: 12px;">stay connected...</p>
+                          
+                   <!-- social media icons -->
+        <div class="socialIcons">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-google"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-skype"></a>
+        <a href="#" class="fa fa-android"></a>
+  </div>
+                   <!-- footer texts -->
+  <div>
+    <h6 class=" text-primary"  style="text-align: center; font-family: 'Cairo', sans-serif; ">
+    Department of Tourism, Government of Kerala, Park View, Thiruvananthapuram, Kerala, India - 695 033
+    </h6>
+    <h6 class=" text-primary"  style="text-align: center; font-family: 'Cairo', sans-serif; ">
+     All rights reserved © Kerala Tourism. Copyright 
+    </h6>
+  </div>
+                              
+  </footer>
+
+  <script src="/js/validations.js"></script>
+</body>
+</html>

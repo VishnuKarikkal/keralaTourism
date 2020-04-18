@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="author" name="VISHNU KS">
+    <meta name="description" content="Kerala Tourism Web-Page">
+    
+    <title>Kerala Tourism</title>
+    <link rel="icon" href="/img/icon.jpg" type="image">
+ 
+                                 <!-- Bootstrap Scripts -->
+       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+                                 <!-- Bootstrap css -->
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+                                                         
+                                 <!-- my styles and formatting -->
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/formatting.css">
+        <link rel="stylesheet" href="./css/validationStyles.css">
+                                <!--google fonts 'Cairo' , 'Indie Flower', 'Titan One', 'Baloo +2', 'Gayathri' -->
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Berkshire+Swash&family=Cairo:wght@400;900&family=Gayathri&family=Indie+Flower&family=Titan+One&display=swap" rel="stylesheet">
+                                  <!--social media icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                                                                    
+                                    
+
+
+</head>
+<body>
+    
+                        <!-- Header section -->
+                        <header class="bg-primary" style="border: 2px solid rgb(221, 240, 56);">   
+                          <!-- header navbar -->
+    <nav class="navbar navbar-expand-lg" style="padding: 5px 10px 5px 10px;">
+          
+                  <a class="navbar-brand" href="/index.html" style="margin-right: 10px;">
+                  <img src="img/icon.jpg" width="80" height="60" style="border-radius: 60%;" class="d-inline-block align-middle" alt="">
+                   <span class="text-light"><h2 style="display: inline;font-family: 'Berkshire Swash', cursive;">Kerala Tourism</h2> </span>
+                  </a>
+                             
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                                                        <!-- home link -->
+                <li class="nav-item">
+                 <a class="nav-link text-light" style="margin-left: 5px;font-size: 16px;font-family: 'Titan One', cursive;" href="/index.html">Home</a>
+                </li>
+                                                        <!-- discover link -->
+                <li class="nav-item">
+                 <a class="nav-link text-light" style="margin-left: 5px;font-size: 16px;font-family: 'Titan One', cursive;" href="/districts.html">Discover</a>
+                </li>
+                                
+                </ul>
+                              
+                  <ul class="nav navbar-nav navbar-right">
+                    <li style="margin-right: 20px;font-size: 16px;">
+                      <a href="/signIn.html" class="text-light carouselFont">
+                                                        <!-- signIn link with a suiting image  -->
+                      <span style="margin-right: 5px;">
+                        <img src="/img/signin.jpg" width="30" height="30" style="border-radius: 50%;" alt="">
+                      </span>
+                      Sign-In</a></li>
+                    <li style="margin-right: 10px;font-size: 16px;">
+                      <a href="signUp.html" class="carouselFont" style="color: black;">
+                                                        <!-- signUp link with a suiting image  -->
+                      <span style="margin-right: 5px;">
+                        <img src="/img/signup.jpg" width="30" height="30" style="border-radius: 50%;" alt="">
+                      </span>Sign-Up</a></li>
+                  </ul>
+                    
+                    
+              </div>
+      </nav>
+                                  <!-- header end -->
+  </header>
+
+
+    <div class="container">
+
+      <div class="imageContainer">
+    
+        <img src="./img/signUpAvatar.jpg" alt="Avatar" class="logInAvatar">
+    
+      </div>
+                        <!-- form starts -->
+                 
+                <!-- Sign-Up Label -->
+  <h3 style="margin: 10px 5px 15px 300px;color: violet;font-family: 'Baloo 2', cursive;">Sign-Up</h3>
+
+        <form action="#" onsubmit="return validateSignUp()">
+                          <!-- class="needs-validation" -->
+      <div class="form-row signUpRows text-info">
+         <div class="col-md-4 mb-3">
+                              
+        <label for="firstNameText">First Name</label>
+        <input type="text" class="form-control" id="firstNameText">
+        <small id="firstNameHelp" class="form-text" style="font-size: 9pt;"></small>
+
+         </div>
+                  
+         <div class="col-md-4 mb-3">
+            
+          <label for="lastNameText">Last name</label>
+          <input type="text" class="form-control" id="lastNameText">
+          <small id="lastNameHelp" class="form-text" style="font-size: 9pt;"></small>
+        </div>
+                        
+        <div class="col-md-4 mb-3">
+                         
+          <label for="usernameText">Username</label>
+          <div class="input-group">
+          <div class="input-group-prepend">
+          <span class="input-group-text text-success" id="inputGroupPrepend">@</span>
+          </div>
+          <input type="text" class="form-control" id="usernameText" aria-describedby="inputGroupPrepend">
+          
+          </div>
+          <small id="userNameHelp" class="form-text" style="font-size: 9pt;">must include lower case, upper case, number and @ symbol</small>
+        </div>
+                        <!-- form row1 end -->
+      </div>
+                         <!-- form row2 - gender radios -->
+<div class="form-row signUpRows text-info">
+
+  <div class="col-md-2">
+    <label for="genderRadio">Gender</label>  
+  </div>
+                       
+  <div class="col-md-5">
+ 
+    <div class="form-check form-check-inline custom-radio">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioMale" value="option1">
+      <label class="form-check-label" for="radioMale">Male</label>
+      
+    </div>
+    <div class="form-check form-check-inline custom-radio">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioFemale" value="option2">
+      <label class="form-check-label" for="radioFemale">Female</label>
+     
+    </div>
+    <div class="form-check form-check-inline custom-radio">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioOther" value="option3">
+      <label class="form-check-label" for="radioOther">Other</label>
+      
+    </div>
+    <small id="genderHelp" class="form-text" style="font-size: 9pt;"></small>
+  </div>
+<div class="col-md-5">
+  <label for="passwordText">Password</label>
+                    <!-- passwordStrength spinners -->
+  <div id="passwordStatus1" class="spinner-grow" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <div id="passwordStatus2" class="spinner-grow" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <div id="passwordStatus3" class="spinner-grow" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <div id="passwordStatus4" class="spinner-grow" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+                  <!-- passwordStrength spinners -->
+     <div class="input-group">
+        <div class="input-group-prepend">
+        <span class="input-group-text text-success" id="inputGroupPrepend">*</span>
+     </div>
+  <input type="text" class="form-control" id="passwordText" aria-describedby="inputGroupPrepend">
+  
+  </div>
+  <small id="passwordHelp" class="form-text" style="font-size: 9pt;">requirements:-: 8 characters, 1 lower case, 1 upper case, 1 number, 1 among[!@#$%&*] and no blank spaces</small>
+</div>
+</div>
+
+                            <!-- form row2 end -->
+      <div class="form-row signUpRows text-info">
+                  
+        <div class="col-md-4">
+                            
+          <label for="countryNameText">Country</label>
+          <!-- <input type= class="form-control" id="countryNameText" required>
+          <div class="invalid-feedback">
+               Please provide Country Name.
+          </div> -->
+        
+          <select id="countryDropdown" class="text-warning" style="width: 80%;">
+            <option hidden disabled selected value="">--Click to Choose--</option>
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="france">France</option>
+            <option value="germany">Germany</option>
+            <option value="spain">Spain</option>
+            <option value="nepal">Nepal</option>
+          </select>
+          <small id="countryHelp" class="form-text" style="font-size: 9pt;"></small> 
+        </div>
+        <div class="col-md-3">
+          <label for="phoneText">Phone Number</label>
+          <input type="text" class="form-control" id="phoneText" placeholder="xxx xxx xxxx">
+          <small id="phoneHelp" class="form-text" style="font-size: 9pt;">xxx-xxx-xxxx or xxx.xxx.xxxx</small>
+        </div>
+        <div class="col-md-5">
+          <label for="emailText">Email</label>
+          <input type="text" class="form-control" id="emailText">
+          <small id="emailHelp" class="form-text" style="font-size: 9pt;"></small>
+        </div>
+      </div>
+        <!-- <div class="col-md-4 mb-3">
+                       
+          <label for="stateNameText">State</label>       
+          <input type="text" class="form-control" id="stateNameText" required>
+          <div class="invalid-feedback">
+               Please provide a valid state.
+           </div>
+        </div> -->
+                          
+        <!-- <div class="col-md-3 mb-3">
+          
+          <label for="zipText">Zip</label>
+          <input type="text" class="form-control" id="zipText" required>
+          <div class="invalid-feedback">
+               Please provide a valid zip (postal code).
+          </div>
+        </div> -->
+                               <!-- form row3 end -->
+      
+                                 <!-- form row4 - email ID -->
+<!-- <div class="form-row signUpRows text-info">
+
+
+
+</div> -->
+                              <!-- form row4 end -->
+
+
+                               <!-- form row5 -'terms & conditions' checkbox  -->
+  <div class="form-group signUpRows">
+                            
+    <div class="form-check">
+                         
+      <input class="form-check-input" type="checkbox" value="" id="termsCheck">
+      <label class="form-check-label text-warning" for="termsCheck">
+              Agree to terms and conditions
+      </label>
+      <small id="termsCheckHelp" class="form-text" style="font-size: 9pt;"></small>
+    </div>
+                            <!-- form row5 end -->
+  </div>
+                            <!-- buttons- submit & cancel -->
+  <div class="logInBtns">
+
+    <button class="btn btn-primary btnSubmit col-md-4" type="submit">Submit</button>
+    <button class="btn btn-warning btnCancel col-md-4" onclick="location.href='index.html'">Cancel</button>
+
+  </div>
+
+</form>
+                        
+                        
+                              <!-- form end -->
+    </div>
+    
+
+
+
+                     <!-- footer -->
+ <footer class="bg-light">
+
+   <p style="text-align: center; color:firebrick;font-size: 12px;">stay connected...</p>
+                                              
+                           <!-- social media icons -->
+      <div class="socialIcons">
+     <a href="#" class="fa fa-facebook"></a>
+     <a href="#" class="fa fa-twitter"></a>
+     <a href="#" class="fa fa-google"></a>
+     <a href="#" class="fa fa-youtube"></a>
+     <a href="#" class="fa fa-instagram"></a>
+     <a href="#" class="fa fa-skype"></a>
+     <a href="#" class="fa fa-android"></a>
+         </div>
+                           <!-- footer texts -->
+       <div>
+      <h6 class=" text-primary"  style="text-align: center; font-family: 'Cairo', sans-serif; ">
+    Department of Tourism, Government of Kerala, Park View, Thiruvananthapuram, Kerala, India - 695 033
+       </h6>
+      <h6 class=" text-primary"  style="text-align: center; font-family: 'Cairo', sans-serif; ">
+       All rights reserved © Kerala Tourism. Copyright 
+     </h6>
+   </div>
+                                                  
+ </footer>
+                          <!-- js scripts -->
+ <script src="/js/validations.js"></script>
+</body>
+</html>
