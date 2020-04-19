@@ -32,3 +32,5 @@ destinations' section
 
 :-border & backg. color
 changed
+
+login and signup form validations added:18--04--2020
