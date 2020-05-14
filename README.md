@@ -35,3 +35,5 @@ changed
 
 login and signup form validations added:18--04--2020
 signUp form action added:19--04--2020
+
+bug fixes(problem with linkages) done on 12--05--2020
